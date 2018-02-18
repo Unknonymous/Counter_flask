@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' type='text/css' href="{{ url_for('static', filename='styles.css') }} ">
+    <title>Counter</title>
+</head>
+<body>
+    <div id='wrapper'>
+
+        
+        <!-- the title and the counter -->
+        <h2 id="counting">I'm keeping count...</h2>
+        <h1 id="count">{{ count }}</h1>
+
+        <!-- Now to get those buttons in there. -->
+        <div id='forms'>
+            <form action="/twoTick" method="POST" class="butnForm">
+                <input type='hidden' name='ticker' value='upTwo'>
+                <input type="submit" value="Plus Two" class='button'>
+            </form>
+            <form action="/reset" method="POST" class="butnForm">
+                <input type='hidden' name='tocker' value='clear'>
+                <input type="submit" value="Reset" class='button'>
+            </form>
+
+        </div>
+    
+    </div><!--closes wrapper-->
+    
+</body>
+</html>

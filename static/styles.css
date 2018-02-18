@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: solid 1px red;
+}
+body{
+    background-color: darkblue;
+}
+#wrapper{
+    width: 960px;
+    background-color: black;
+    margin: auto;
+}
+#counting{
+    color: red;
+    text-align: center;
+}
+#count{
+    color: lime;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+}
+#forms{
+    width: 200px;
+    margin: auto;
+
+}
+.butnForm{
+    width: 200px;
+    text-align: center;
+}
+.button{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: black;
+    border: solid 2px red;
+    color: white;
+    font-weight: bold;
+}
